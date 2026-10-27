@@ -130,3 +130,4 @@ Thông tin đang được khai báo trong mục **Liên hệ** của `index.html
 - LinkedIn: `linkedin.com/in/nguyenvanan` (liên kết mẫu).
 
 Đây là dữ liệu mẫu, không xác nhận thông tin liên hệ thật của tác giả. Hãy thay bằng thông tin chính xác trước khi chia sẻ website; đồng thời thống nhất tên tác giả trong nội dung trang.
+

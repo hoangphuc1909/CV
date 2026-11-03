@@ -12,13 +12,13 @@
    ========================================================================== */
 :root {
   /* --- Bảng màu --- */
-  --color-primary: #2563eb;      /* xanh thương hiệu */
-  --color-primary-dark: #1d4ed8;
+  --color-primary: #1107a0;      /* xanh thương hiệu */
+  --color-primary-dark: #e21bd8;
   --color-accent: #7c3aed;       /* tím nhấn */
-  --color-text: #1e293b;         /* chữ chính */
-  --color-text-soft: #64748b;    /* chữ phụ */
-  --color-bg: #ffffff;           /* nền trang */
-  --color-surface: #f8fafc;      /* nền vùng nhấn */
+  --color-text: #000000;         /* chữ chính */
+  --color-text-soft: #000000;    /* chữ phụ */
+  --color-bg: linear-gradient(90deg,rgba(176, 0, 106, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);;           /* nền trang */
+  --color-surface: linear-gradient(90deg,rgba(176, 0, 106, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);;      /* nền vùng nhấn */
   --color-border: #e2e8f0;       /* viền */
   --color-chip: #eff6ff;         /* nền chip kỹ năng */
 
@@ -452,4 +452,261 @@ ul {
     transition: none !important;
     scroll-behavior: auto !important;
   }
+}
+/* ==========================================================
+   12. CONTACT SECTION - GIAO DIỆN XANH NEON
+   ========================================================== */
+
+/* Khu vực liên hệ */
+.contact-section {
+    padding: 75px 0 45px;
+    min-height: 90vh;
+    background:
+        radial-gradient(
+            circle at 75% 15%,
+            rgba(43, 87, 180, 0.25),
+            transparent 40%
+        ),
+        linear-gradient(
+            135deg,
+            #20243d,
+            #17182c,
+            #211b42
+        );
+    color: #ffffff;
+}
+
+/* Tiêu đề liên hệ */
+.contact-heading {
+    margin-bottom: 25px;
+}
+
+.contact-number {
+    color: #36d9ff;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.contact-heading h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.contact-heading h2 span {
+    color: #19c9ff;
+}
+
+.contact-heading > p:last-child {
+    color: #cbd5e1;
+    font-size: 15px;
+}
+
+/* Bố cục hai cột */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 20px;
+    align-items: stretch;
+}
+
+/* Khung thông tin và khung biểu mẫu */
+.contact-info,
+.contact-form-box {
+    background: linear-gradient(
+        135deg,
+        rgba(37, 99, 235, 0.42),
+        rgba(30, 41, 100, 0.65)
+    );
+
+    border: 1px solid #287bff;
+    border-radius: 14px;
+    padding: 25px;
+
+    box-shadow:
+        0 0 15px rgba(0, 119, 255, 0.12),
+        inset 0 0 15px rgba(59, 130, 246, 0.08);
+
+    transition: 0.3s;
+}
+
+/* Hiệu ứng khung */
+.contact-info:hover,
+.contact-form-box:hover {
+    border-color: #20d7ff;
+    box-shadow: 0 0 20px rgba(32, 130, 255, 0.2);
+}
+
+/* Nội dung khung bên trái */
+.contact-info .contact-label {
+    color: #39dfff;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.contact-info h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.contact-info ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-info li {
+    color: #e2e8f0;
+    font-size: 15px;
+}
+
+/* Form bên phải */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 13px;
+}
+
+.form-group label {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    background: rgba(20, 22, 45, 0.85);
+
+    border: 1px solid #3985ff;
+    border-radius: 8px;
+
+    padding: 13px;
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input {
+    height: 48px;
+}
+
+.form-group textarea {
+    min-height: 95px;
+    resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #cbd5e1;
+}
+
+/* Hiệu ứng khi nhập */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #20d7ff;
+    box-shadow: 0 0 10px rgba(32, 215, 255, 0.3);
+}
+
+/* Nút gửi lời nhắn */
+.contact-btn {
+    background: linear-gradient(
+        90deg,
+        #087cff,
+        #00bfff
+    );
+
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 15px rgba(0, 153, 255, 0.5);
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 22px rgba(0, 195, 255, 0.7);
+}
+
+/* Footer */
+.site-footer {
+    background: #17182c;
+    border-top: 1px solid rgba(148, 163, 184, 0.3);
+    color: #cbd5e1;
+    padding-block: 18px;
+}
+
+.footer-inner {
+    justify-content: center;
+    text-align: center;
+}
+
+.to-top {
+    color: #19c9ff;
+}
+
+/* ==========================================================
+   RESPONSIVE - TABLET VÀ MOBILE
+   ========================================================== */
+
+@media (max-width: 767px) {
+
+    .contact-section {
+        padding: 45px 0 30px;
+    }
+
+    .contact-heading h2 {
+        font-size: 28px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info,
+    .contact-form-box {
+        padding: 20px;
+    }
+
+    .contact-info h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .contact-heading h2 {
+        font-size: 25px;
+    }
+
+    .contact-info li {
+        font-size: 14px;
+    }
+
+    .contact-form-box {
+        padding: 16px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 13px;
+    }
 }
